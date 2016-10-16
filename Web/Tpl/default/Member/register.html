@@ -1,0 +1,38 @@
+<include file="$head"/>
+<script>$(document).ready(function() {
+$('.ui-title').text('用户注册');//标题
+});
+</script>
+<div data-role="content" class="content">
+<div>
+ 	<form action="{:U('Member/run_register')}" name="reg_form" id="regform" method="post" data-ajax="false">
+   
+    <input type="text" name="realname" id="username" class="form-control" placeholder="真实姓名" >
+    
+    <input type="text" name="sex" id="username" class="form-control" placeholder="性别" >
+
+    <input type="text" name="age" id="username" class="form-control" placeholder="年龄" >
+
+    <input type="text" name="usercode" id="username" class="form-control" placeholder="账号" >
+  
+    <input type="password" id="userpwd" name="password" class="form-control" placeholder="输入密码">
+ 
+    <input type="password" name="password2" id="userpwd2" class="form-control" placeholder="再次输入密码确认" />
+  
+    <input type="text" name="pet" id="username" class="form-control" placeholder="昵称" >
+
+    <input type="text" name="email" id="email" class="form-control" placeholder="输入Email">
+
+    <input type="text" name="tel" id="username" class="form-control" placeholder="电话">
+
+   <div class="form-group">
+  <button type="submit" data-theme="b">确定注册</button> 
+  <a data-role="button" id="toregist" data-theme="e" data-transition="turn" href="{:U('Member/login')}" >立即登陆</a>
+  </div>
+</form>
+<br><br>
+</div>
+</div>
+</div><!-- end page -->
+</body>
+</html>

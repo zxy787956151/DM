@@ -1,0 +1,27 @@
+<include file="$head"/>
+<script>$(document).ready(function() {
+$('.ui-title').text('用户登陆');//标题
+});
+</script>
+<div data-role="content"  class="content">
+        	<form action="{:U('member/run_login')}" method="post" name="form1" data-ajax="false">
+            	<input type="text" name="usercode" id="username" placeholder="请输入账号"/>
+            	<input type="password" name="password" id="userpwd" placeholder="请输入密码"/>
+            	<br/>
+            	<img src='__APP__/member/verify' onclick="this.src=this.src+'/'+Math.random()" >
+            	<b>验证码</b><input type='text' id="username" name='verify' style="width:100%">
+       			<br/>
+
+        <a data-role="button" id="submit" data-theme="b" data-ajax="false" onclick="document.form1.submit();" >登录</a>
+
+        
+
+
+        <a data-role="button" id="toregist" data-theme="e" data-transition="turn" href="{:U('Member/register')}" >注册</a>
+        <br/>
+        <a data-role="button" id="toregist" data-theme="b" data-transition="turn" href="{:U('Member/register')}" style="width:100px">忘记密码</a>
+        </form>
+</div>
+</div><!-- end page -->
+</body>
+</html>

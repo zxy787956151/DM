@@ -1,0 +1,1 @@
+create table dami_user(id int unsigned not null primary key auto_increment,realname varchar(30),sex int default 0,age int,usercode varchar(50),password varchar(30),pet varchar(30),email varchar(40),tel varchar(30));

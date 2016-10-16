@@ -1,0 +1,1625 @@
+[ 2016-09-27T17:01:45+08:00 ] 0.0.0.0 /DM/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.027303s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.032020s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000304s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000198s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: usercode D:\WWW\DM\Web\Lib\Action\IndexAction.class.php 第 19 行.
+SQL: SELECT * FROM `dami_type` WHERE ( typeid =20 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `dami_type` WHERE ( 1 = instr(path,'0-18-20') )  [ RunTime:0.000171s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\DM\Web\Common\common.php 第 150 行.
+SQL: SELECT article.aid AS aid,article.title AS title,article.titlecolor AS titlecolor,article.author AS author,article.keywords AS keywords,article.description AS description,article.note AS note,article.linkurl AS linkurl,article.status AS status,article.copyfrom AS copyfrom,article.addtime AS addtime,article.islink AS islink,article.isflash AS isflash,article.istop AS istop,article.isimg AS isimg,article.imgurl AS imgurl,article.ishot AS ishot,article.pagenum AS pagenum,article.hits AS hits,article.content AS content,article.typeid AS typeid,article.voteid AS voteid,article.is_from_mobile AS is_from_mobile,article.price AS price,article.color AS color,article.product_xinghao AS product_xinghao,article.dami_uid AS dami_uid,type.typename AS typename FROM dami_article article LEFT JOIN dami_type type ON article.typeid=type.typeid WHERE ( article.typeid IN ('20') ) AND ( article.status = 1 ) ORDER BY article.addtime desc LIMIT 5   [ RunTime:0.010272s ]
+SQL: SELECT * FROM `dami_type` WHERE ( typeid =18 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `dami_type` WHERE ( 1 = instr(path,'0-18') )  [ RunTime:0.000213s ]
+SQL: SELECT article.aid AS aid,article.title AS title,article.titlecolor AS titlecolor,article.author AS author,article.keywords AS keywords,article.description AS description,article.note AS note,article.linkurl AS linkurl,article.status AS status,article.copyfrom AS copyfrom,article.addtime AS addtime,article.islink AS islink,article.isflash AS isflash,article.istop AS istop,article.isimg AS isimg,article.imgurl AS imgurl,article.ishot AS ishot,article.pagenum AS pagenum,article.hits AS hits,article.content AS content,article.typeid AS typeid,article.voteid AS voteid,article.is_from_mobile AS is_from_mobile,article.price AS price,article.color AS color,article.product_xinghao AS product_xinghao,article.dami_uid AS dami_uid,type.typename AS typename FROM dami_article article LEFT JOIN dami_type type ON article.typeid=type.typeid WHERE ( article.typeid IN ('18','19','20','21') ) AND ( article.status = 1 ) ORDER BY article.addtime desc LIMIT 9   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `dami_type` WHERE ( typeid =22 ) LIMIT 1   [ RunTime:0.000173s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid = 22 )  [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `dami_link` [ RunTime:0.065581s ]
+SQL: SELECT `url`,`title` FROM `dami_link` WHERE ( `islogo` = 0 ) AND ( `status` = 1 ) ORDER BY rank  [ RunTime:0.000214s ]
+SQL: SELECT `url`,`title`,`logo` FROM `dami_link` WHERE ( `islogo` = 1 ) AND ( `status` = 1 ) ORDER BY rank  [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dami_uid D:\WWW\DM\Web\Runtime\Cache\97f3533fbfeae41e6e5cce99b319b73c.php 第 33 行.
+NOTIC: [8] Use of undefined constant lists - assumed 'lists' D:\WWW\DM\Web\Runtime\Cache\97f3533fbfeae41e6e5cce99b319b73c.php 第 50 行.
+SQL: SHOW COLUMNS FROM `dami_link` [ RunTime:0.002541s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\DM\Core\Lib\Core\Model.class.php 第 234 行.
+SQL: SELECT * FROM `dami_link` WHERE ( status=1 ) ORDER BY rank asc  [ RunTime:0.000155s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.567872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.567911s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000509s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000264s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000216s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000356s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-09-27T17:02:03+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012446s ]
+INFO: [ route_check ] --END-- [ RunTime:0.012513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002400s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002191s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000116s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004916s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000384s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000214s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000161s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000325s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2016-09-27T17:02:05+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002298s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002203s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000232s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.028604s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000160s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004799s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000206s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000151s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-09-27T17:03:08+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002697s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002439s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000287s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000223s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000205s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000191s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000145s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-09-27T17:03:09+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002314s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002159s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.002005s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000170s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005121s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000312s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000344s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000168s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001236s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000312s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-09-27T17:03:25+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002476s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002165s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000188s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000114s ]
+
+[ 2016-09-27T17:03:26+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/www.baidu.com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000431s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002528s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002499s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000188s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+
+[ 2016-09-27T17:33:52+08:00 ] 0.0.0.0 /DM/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002832s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002647s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000941s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000403s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: usercode D:\WWW\DM\Web\Lib\Action\IndexAction.class.php 第 19 行.
+SQL: SELECT * FROM `dami_type` WHERE ( typeid =20 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT * FROM `dami_type` WHERE ( 1 = instr(path,'0-18-20') )  [ RunTime:0.000211s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\DM\Web\Common\common.php 第 150 行.
+SQL: SELECT article.aid AS aid,article.title AS title,article.titlecolor AS titlecolor,article.author AS author,article.keywords AS keywords,article.description AS description,article.note AS note,article.linkurl AS linkurl,article.status AS status,article.copyfrom AS copyfrom,article.addtime AS addtime,article.islink AS islink,article.isflash AS isflash,article.istop AS istop,article.isimg AS isimg,article.imgurl AS imgurl,article.ishot AS ishot,article.pagenum AS pagenum,article.hits AS hits,article.content AS content,article.typeid AS typeid,article.voteid AS voteid,article.is_from_mobile AS is_from_mobile,article.price AS price,article.color AS color,article.product_xinghao AS product_xinghao,article.dami_uid AS dami_uid,type.typename AS typename FROM dami_article article LEFT JOIN dami_type type ON article.typeid=type.typeid WHERE ( article.typeid IN ('20') ) AND ( article.status = 1 ) ORDER BY article.addtime desc LIMIT 5   [ RunTime:0.000353s ]
+SQL: SELECT * FROM `dami_type` WHERE ( typeid =18 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `dami_type` WHERE ( 1 = instr(path,'0-18') )  [ RunTime:0.000185s ]
+SQL: SELECT article.aid AS aid,article.title AS title,article.titlecolor AS titlecolor,article.author AS author,article.keywords AS keywords,article.description AS description,article.note AS note,article.linkurl AS linkurl,article.status AS status,article.copyfrom AS copyfrom,article.addtime AS addtime,article.islink AS islink,article.isflash AS isflash,article.istop AS istop,article.isimg AS isimg,article.imgurl AS imgurl,article.ishot AS ishot,article.pagenum AS pagenum,article.hits AS hits,article.content AS content,article.typeid AS typeid,article.voteid AS voteid,article.is_from_mobile AS is_from_mobile,article.price AS price,article.color AS color,article.product_xinghao AS product_xinghao,article.dami_uid AS dami_uid,type.typename AS typename FROM dami_article article LEFT JOIN dami_type type ON article.typeid=type.typeid WHERE ( article.typeid IN ('18','19','20','21') ) AND ( article.status = 1 ) ORDER BY article.addtime desc LIMIT 9   [ RunTime:0.000341s ]
+SQL: SELECT * FROM `dami_type` WHERE ( typeid =22 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid = 22 )  [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `dami_link` [ RunTime:0.002663s ]
+SQL: SELECT `url`,`title` FROM `dami_link` WHERE ( `islogo` = 0 ) AND ( `status` = 1 ) ORDER BY rank  [ RunTime:0.000181s ]
+SQL: SELECT `url`,`title`,`logo` FROM `dami_link` WHERE ( `islogo` = 1 ) AND ( `status` = 1 ) ORDER BY rank  [ RunTime:0.000133s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dami_uid D:\WWW\DM\Web\Runtime\Cache\97f3533fbfeae41e6e5cce99b319b73c.php 第 33 行.
+NOTIC: [8] Use of undefined constant lists - assumed 'lists' D:\WWW\DM\Web\Runtime\Cache\97f3533fbfeae41e6e5cce99b319b73c.php 第 50 行.
+SQL: SHOW COLUMNS FROM `dami_link` [ RunTime:0.002776s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\DM\Core\Lib\Core\Model.class.php 第 234 行.
+SQL: SELECT * FROM `dami_link` WHERE ( status=1 ) ORDER BY rank asc  [ RunTime:0.000168s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017471s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000411s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000296s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001366s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000362s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-09-27T17:33:55+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000553s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002274s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.007070s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000207s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000141s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004724s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000219s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000207s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000165s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000293s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-09-27T17:33:56+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002624s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002587s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.026650s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005343s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000263s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000205s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000274s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000307s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-09-27T17:34:01+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002432s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002313s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000125s ]
+
+[ 2016-09-27T17:34:02+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/www.baidu.com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002281s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002168s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+
+[ 2016-09-27T17:34:17+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002363s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002140s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000227s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000093s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004043s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000191s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000187s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000143s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000822s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2016-09-27T17:34:32+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000402s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002412s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002248s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004993s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000199s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000186s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000141s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000306s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2016-09-27T17:34:39+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002708s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002259s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004078s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000195s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000188s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000143s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000287s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2016-09-27T17:34:40+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002483s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002228s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000194s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.002024s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004947s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000201s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000196s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000171s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-09-27T17:34:54+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002492s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002303s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000274s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000111s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004243s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000195s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000218s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000143s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000311s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2016-09-27T17:35:53+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000423s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002681s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002376s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000233s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000141s ]
+
+[ 2016-09-27T17:36:00+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.003931s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.008703s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000328s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000136s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004794s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000268s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000261s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000360s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2016-09-27T17:36:36+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000504s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002427s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.008632s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000204s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000159s ]
+
+[ 2016-09-27T17:36:40+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002261s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002183s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000114s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004473s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000203s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000192s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000147s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000295s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-09-27T17:38:16+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002319s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002135s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004568s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000260s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000286s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2016-09-27T17:38:20+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002999s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002397s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000247s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+
+[ 2016-09-27T17:38:47+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000512s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002458s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002253s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000123s ]
+
+[ 2016-09-27T17:40:54+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002381s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002271s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000226s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000126s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005047s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000275s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000265s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001187s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2016-09-27T17:40:55+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002993s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002446s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000219s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.002843s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000191s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004876s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000193s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000217s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000147s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-09-27T17:41:10+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002455s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002262s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000287s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000104s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004202s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000205s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000196s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000168s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000344s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-09-27T17:41:20+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000463s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.019453s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.011252s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000436s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000190s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000125s ]
+
+[ 2016-09-27T17:41:28+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000508s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002326s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002137s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000110s ]
+
+[ 2016-09-27T17:43:47+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002487s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002329s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000215s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004638s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000262s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000212s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2016-09-27T17:43:49+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002357s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002180s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.001908s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004763s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000221s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000191s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000198s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000283s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-09-27T17:43:57+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002609s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.014077s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000273s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000094s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004112s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000194s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000148s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000294s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-09-27T17:44:03+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.003014s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002572s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000286s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000104s ]
+
+[ 2016-09-27T17:44:07+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002955s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.010546s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000114s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004745s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000218s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000198s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000157s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000304s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-09-27T17:47:49+08:00 ] 0.0.0.0 /DM/index.php?s=guestbook
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002513s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002203s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000228s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004615s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000259s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2016-09-27T17:47:50+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=show&page=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.012375s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002355s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000406s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `dami_guestbook` [ RunTime:0.002225s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 )  [ RunTime:0.000159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dami_guestbook` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SELECT * FROM `dami_guestbook` WHERE ( `status` = 1 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.000201s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004444s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000185s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000185s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-09-27T17:47:54+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002502s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002551s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000384s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000198s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000123s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004116s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000252s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000192s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000209s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2016-09-27T17:48:00+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002493s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002508s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000301s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000171s ]
+
+[ 2016-09-27T17:48:10+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.016369s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002320s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000170s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000100s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004052s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000196s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000194s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000148s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000298s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2016-09-27T17:48:18+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000416s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.013661s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000277s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000156s ]
+
+[ 2016-09-27T17:48:51+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002538s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002618s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000188s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000113s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004260s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000197s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000211s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000160s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000897s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000321s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2016-09-27T17:48:53+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.010854s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002372s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000208s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000121s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004595s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000216s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000201s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000157s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000310s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-09-27T17:48:59+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000416s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002533s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002266s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000112s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004084s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000191s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000186s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000143s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-09-27T17:50:13+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000601s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002463s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002210s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000126s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004683s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000259s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000253s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001089s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000344s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2016-09-27T17:50:28+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002387s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002148s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003949s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000190s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000187s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000145s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000825s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000288s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2016-09-27T17:50:33+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002519s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002729s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000274s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+
+[ 2016-09-27T17:51:47+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/run_compile.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000411s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002583s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002396s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000124s ]
+
+[ 2016-09-27T17:52:19+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.003237s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.003098s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000332s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000098s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004954s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000327s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000341s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001285s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-09-27T17:52:23+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000478s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002797s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.012002s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000273s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000096s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000089s ]
+
+[ 2016-09-27T17:54:29+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.011837s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.009495s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000209s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000141s ]
+
+[ 2016-09-27T17:54:50+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002536s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002640s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000188s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004651s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000290s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000288s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-09-27T17:55:42+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.051949s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.014347s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000212s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000124s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004602s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000221s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000202s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000156s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000313s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-09-27T17:56:45+08:00 ] 0.0.0.0 /DM/index.php?s=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000873s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.015689s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002622s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000209s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000141s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004122s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000205s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000186s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000308s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-09-27T17:56:56+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002391s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.010815s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000208s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000147s ]
+
+[ 2016-09-27T18:03:16+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002379s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002201s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.688303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.688361s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000466s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000270s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000219s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000526s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-09-27T18:03:19+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.005809s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002227s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005046s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000208s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000201s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000152s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000306s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-09-27T18:06:08+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002541s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002156s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005098s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000360s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001325s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000374s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-09-27T18:06:15+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.004204s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002268s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000119s ]
+
+[ 2016-09-27T18:07:33+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002126s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000312s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000204s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000165s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004704s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000261s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000257s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000209s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001101s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000360s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2016-09-27T18:07:36+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000406s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002721s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002488s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000281s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000115s ]
+
+[ 2016-09-27T18:07:58+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000424s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002697s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002225s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000117s ]
+
+[ 2016-09-27T18:09:04+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002896s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002273s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000124s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004093s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000194s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000187s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000143s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000288s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2016-09-27T18:09:07+08:00 ] 0.0.0.0 /DM/index.php?s=/guestbook/com.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000487s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: Tag nouse invalid in Entity, line: 1 D:\WWW\DM\Core\Extend\Vendor\Xsshtml\xsshtml.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\WWW\DM\Web\Lib\Action\BaseAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002599s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002273s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000277s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000207s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000124s ]
+
+[ 2016-09-27T18:09:10+08:00 ] 0.0.0.0 /DM/index.php?m=Guestbook&a=compile&id=2016-09-23%2021:02:56
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [2048] Declaration of GuestbookAction::show() should be compatible with that of Action::show() D:\WWW\DM\Web\Lib\Action\GuestbookAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dami_type` [ RunTime:0.002536s ]
+SQL: SHOW COLUMNS FROM `dami_article` [ RunTime:0.002202s ]
+SQL: SELECT * FROM `dami_type` WHERE ( ismenu=1 ) ORDER BY drank asc  [ RunTime:0.000231s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=25 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `dami_type` WHERE ( fid=26 AND drank <> 0 ) ORDER BY drank asc  [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: typeid D:\WWW\DM\Web\Lib\Action\PublicAction.class.php 第 55 行.
+SQL: SELECT `typename` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `path` FROM `dami_type` WHERE ( typeid=0 ) LIMIT 1   [ RunTime:0.000116s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004387s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000197s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000148s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000332s ]
+
